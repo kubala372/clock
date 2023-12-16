@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto&display=swap');
+
+:root {
+    --bg-color-primary: #121212;
+    --bg-color-secondary: #1e1e1e;
+    --accent-color-primary: #bb86fc;
+    --accent-color-secondary: #03dac6;
+    --font-color-primary: #d4d4d4;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--bg-color-primary);
+    color: var(--font-color-primary);
+    justify-content: center;
+    align-items: center;
+    font-family: Roboto;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.clock__parent__div {
+    border-radius: 50px;
+    box-shadow:  20px 20px 40px #0f0f0f,
+                 -20px -20px 40px #151515;
+    font-size: 3rem;
+    height: 200px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock__children__div {
+    display: inline-flex;
+}
+
+#hours, #minutes, #seconds {
+    display: inline-flex;
+}
